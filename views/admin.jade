@@ -1,0 +1,14 @@
+extends layout
+block content
+    h1= title
+    p Welcome to #{title}
+
+    select#opcoes_de_atendimento
+        option Pronto-Socorro
+        option Pediatria
+        option Ginecologista
+        option Radiologista
+
+    input#enviar(type="button", value="enviar")
+
+    script(src='/javascripts/admin.js')
